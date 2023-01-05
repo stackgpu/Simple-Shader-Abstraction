@@ -1,0 +1,36 @@
+{
+  "name": "simple-shader-abstraction",
+  "version": "0.01.0",
+  "description": "simple shader abstraction creates webGPU Shaders for framework agnostic use",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf dist && rollup -c "
+  },
+  "files": [
+    "dist/**/*.js",
+    "lib/**/*.js"
+  ],
+  "module": "lib/index.js",
+  "main": "lib/index.js",
+  "jsdelivr": "dist/simple-gpu.min.js",
+  "exports": {
+    "umd": "./dist/simple-gpu.min.js",
+    "default": "./src/index.js"
+  },
+  "devDependencies": {
+    "d3": "^7.1.1",
+    "regl": "^2.1.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.13",
+    "gl-matrix": "^3.4.3",
+    "mocha": "9",
+    "rollup": "3",
+    "@rollup/plugin-json": "6",
+    "@rollup/plugin-node-resolve": "15"
+  },
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/adnanwahab/simple-webgpu/issues"
+  },
+  "homepage": "https://simple-webgpu.com"
+}
